@@ -10,7 +10,5 @@ testing:
  with:
  python-version: 3.6.9
  architecture: x64
- - name: Install dependencies
- run: pip install apache-airflow pytest
  - name: Test DAG integrity
  run: pytest test.py
