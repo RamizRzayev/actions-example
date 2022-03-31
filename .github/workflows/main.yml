@@ -6,9 +6,9 @@ testing:
  steps:
  - uses: actions/checkout@v1
  - name: Setup Python
- uses: actions/setup-python@v1
- with:
- python-version: 3.6.9
+ - uses: actions/setup-python@v1
+   with:
+   python-version: 3.6.9
  architecture: x64
  - name: Test DAG integrity
- run: pytest test.py
+   run: pytest test.py
